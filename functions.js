@@ -6,6 +6,11 @@
  */
 function greet(name) {
   // Your code here
+  if (name) {
+    console.log(`Hello ${name}`);
+  } else {
+    console.log("Hello");
+  }
 }
 
 /**
@@ -15,6 +20,11 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  if (n % 2 !== 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -30,6 +40,19 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  //   let num = 0;
+  //   for (let counter = 0; counter < n; counter++) {
+  //     if (counter % 2 !== 0) {
+  //       num++;
+  //     }
+  //   }
+  //   return num;
+  // }
+  if (n % 2 !== 0) {
+    return (n - 1) / 2;
+  } else {
+    return n / 2;
+  }
 }
 
 /**
@@ -44,6 +67,11 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  if (n % 2 !== 0) {
+    return n ** 2;
+  } else {
+    return n * 2;
+  }
 }
 
 /**
